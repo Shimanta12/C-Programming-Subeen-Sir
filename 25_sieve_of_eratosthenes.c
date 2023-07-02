@@ -1,6 +1,19 @@
 #include <stdio.h>
 #include <math.h>
 
+/*
+Problem description:
+What we've tried to do here is to determine whether a number is prime or not by
+implementing the sieve of Eratosthenes. And we need to optimize the program in such a way that it is
+both memory-efficient and time efficient. 
+Approach:
+We are maintaining a character array instead of an integer array to store the status of a number within
+the range of sqare_root(maximum_num one would check).If the number is less than or equal to the size 
+of the array then we are simply returning the status from the array. Otherwise if the number is greater than
+sqare_root(maximum_num one would check), then we are checking if the number is divisible by all the prime
+numbers less than or equal to square_root(number) which we have already determined using the sieve function.
+*/
+
 void sieve(char arr[], int size)
 {
     for (int i = 2; i <= size; i++)
