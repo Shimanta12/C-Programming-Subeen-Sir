@@ -27,8 +27,8 @@ int main()
             if (!is_word_started)
             {
                 is_word_started = true;
-                printf("%c", str[i]);
             }
+            printf("%c", str[i]);
         }
         else
         {

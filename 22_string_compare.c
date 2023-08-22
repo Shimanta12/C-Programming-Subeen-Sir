@@ -17,10 +17,10 @@ int string_compare(char str1[], char str2[])
     }
     else if (strlen(str1) < strlen(str2))
     {
-        return 1;
+        return -1;
     }
     else
-        return -1;
+        return 1;
 }
 
 int main()
@@ -36,7 +36,7 @@ int main()
     }
     else if (string_compare(str1, str2) == 1)
     {
-        printf("Second string is bigger.\n");
+        printf("Second string is smaller.\n");
     }
     else
     {
