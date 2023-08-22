@@ -2,10 +2,10 @@
 
 /*
 Problem Description:
-In this problem we aim to determine the prime factors of a given number between 2 and 99. For each input number, the code calculates the prime factors and the count of each prime factor. Finally, we print the prime factors and their counts.
+In this problem we aim to determine the prime factors of a factorial number of a given number between 2 and 99. For a input number, the code calculates the prime factors and the count of each prime factor. Finally, we print the prime factors and their counts.
 
 Approach:
-We use a predefined array named prime that contains the prime numbers from 2 to 97. It initializes an array num_of_primes to store the count of each prime factor.
+We use a predefined array named prime that contains the prime numbers from 2 to 97. And another array  num_of_primes to store the count of each prime factor.
 
 For each input number n, we iterate from n down to 2 and checks if the number is divisible by any prime number. If it is divisible, it updates the count of that prime factor in the num_of_primes array and continues dividing the number by the prime factor until it is no longer divisible.
 
